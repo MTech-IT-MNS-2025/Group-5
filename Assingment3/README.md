@@ -33,27 +33,29 @@ The backend uses **Next.js API routes** and **Socket.IO** for real-time message 
 ## 🧩 Architecture
 
 ```
-┌──────────────────────────┐
-│        Client (UI)       │
-│  - Next.js Pages         │
-│  - React Hooks           │
-│  - Socket.IO Client      │
-└────────────┬─────────────┘
-             │ WebSocket
-                     ▼
-┌──────────────────────────┐
-│     Next.js Server       │
-│  - API Routes (/api/*)   │
-│  - Socket.IO Server      │
-│  - MongoDB Connection    │
-└────────────┬─────────────┘
-             │
-                     ▼
-┌──────────────────────────┐
-│       MongoDB Atlas      │
-│  - Stores messages       │
-│  - Stores usernames      │
-└──────────────────────────┘
+Assignment3/
+├── .env.local
+├── package.json
+├── package-lock.json
+├── README.md
+├── /lib
+│   └── dbConnect.js
+├── /models
+│   ├── Message.js
+│   └── User.js
+├── /pages
+│   ├── index.js
+│   ├── chat.js
+│   ├── _app.js
+│   └── /api
+│       ├── socket.js
+│       ├── messages.js
+│       ├── login.js
+│       └── register.js
+├── /styles
+│   └── globals.css
+└── /node_modules
+
 ```
 
 ---
@@ -88,6 +90,8 @@ Your app will be available at:
 
 ## 🖼️ Screenshots
 
+### 🔹 Register Page
+![Register Page](./Screenshots/register.png)
 
 ### 🔹 Login Page
 ![Login Page](./Screenshots/login.png)
