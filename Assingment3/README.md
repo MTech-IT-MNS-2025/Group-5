@@ -64,8 +64,8 @@ Assignment3/
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/my-chat-app.git
-cd my-chat-app
+git clone https://github.com/MTech-IT-MNS-2025/Group-5.git
+cd Assignment3
 ```
 
 ### 2️⃣ Install dependencies
@@ -75,7 +75,8 @@ npm install
 
 ### 3️⃣ Set up environment variables
 
-Create a `.env.local` file in your project root:
+Create a `.env.local` file in your project root: 
+MONGO_URI={mongodblink}
 
 
 ### 4️⃣ Run the development server
